@@ -1,16 +1,53 @@
+import { BsGithub, BsInstagram, BsLinkedin, BsTelegram } from "react-icons/bs";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Footer = () => {
   return (
     <footer className="h-64 bg-red pt-10">
-      <div className="w-10/12 mx-auto">
-        <SocialMediaIcons />
-        <div className="md:flex justify-center md:justify-between text-center ">
-          <p className="font-playfair font-semibold text-2xl text-yellow">
-            JANE ESPER
+      <div className="mx-auto w-10/12">
+        <div className="my-10 flex justify-center gap-7 md:justify-start">
+          <a
+            className="text-3xl  transition duration-500 hover:opacity-50"
+            href="https://github.com/mohammadAminSH1524"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsGithub />
+          </a>
+          {/*  */}
+          <a
+            className="text-3xl  transition duration-500 hover:opacity-50"
+            href="https://www.linkedin.com/in/m-aminshavandi/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsLinkedin />
+          </a>
+          {/*  */}
+          <a
+            className="text-3xl  transition duration-500 hover:opacity-50"
+            href="https://t.me/Svnd152"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsTelegram />
+          </a>
+          {/*  */}
+          <a
+            className="text-3xl  transition duration-500 hover:opacity-50"
+            href="https://instagram.com/m_amin_shavandi82?igshid=MzNlNGNkZWQ4Mg==/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsInstagram />
+          </a>
+        </div>
+        <div className="justify-center text-center md:flex md:justify-between ">
+          <p className="font-playfair text-2xl font-semibold text-yellow">
+            MOHAMMAD AMIN
           </p>
-          <p className="font-playfair text-md text-yellow">
-            ©2022 ESPER. All Rights Reserved.
+          <p className="text-md font-playfair text-yellow">
+            ©2023 AMIN. All Rights Reserved.
           </p>
         </div>
       </div>

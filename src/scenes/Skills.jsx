@@ -19,9 +19,9 @@ const MySkills = () => {
   };
 
   return (
-    <section id="skills" className="pb-24 pt-10">
+    <section id="skills" className="h-full pb-24 pt-10">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="mb-12 mt-28 md:flex md:justify-between md:gap-16">
+      <div className="mb-12 mt-20 md:flex md:justify-between md:gap-16">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -43,11 +43,11 @@ const MySkills = () => {
       {/* SKILLS */}
 
       <motion.div
-        className="grid grid-cols-4 gap-x-12 gap-y-14 "
+        className="grid gap-x-8 gap-y-8 m:grid-cols-2 xlg:grid-cols-3 xxl:grid-cols-4 "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
         variants={{
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
@@ -55,10 +55,10 @@ const MySkills = () => {
       >
         {/* HTML */}
         <div
-          className="flex flex-col items-center  
-          gap-y-3 rounded-xl border-2 border-[#d84823] shadow-2xl "
+          className="flex flex-col items-center  gap-y-8
+          rounded-xl border-2 border-[#d8472383] p-4 shadow-2xl "
         >
-          <div className="mb-5 flex w-full  items-center justify-between ">
+          <div className="flex w-full  items-center justify-between md:px-8 lg:px-16  xlg:px-0 ">
             <div className="PERRCENT relative h-[150px] w-[150px] ">
               <div
                 style={{
@@ -90,15 +90,15 @@ const MySkills = () => {
                 95%
               </div>
             </div>
-            <div className="flex w-full items-center justify-center gap-1.5">
-              <span className="text-xl">HTML</span>
+            <div className="flex  items-center gap-1.5 xlg:w-full xlg:justify-center">
+              <span className="text-[22px]">HTML</span>
               <span className="h-6 w-6 pt-0.5 text-2xl text-[#d84823]">
                 <AiFillHtml5 />
               </span>
             </div>
           </div>
 
-          <p className="px-2 text-justify">
+          <p className="hidden px-2 text-justify xlg:block">
             <span className="font-opensans font-semibold text-[#d84823] ">
               HTML
             </span>{" "}
@@ -108,10 +108,10 @@ const MySkills = () => {
         </div>
         {/* CSS */}
         <div
-          className="flex flex-col items-center  
-          gap-y-3 rounded-xl shadow-2xl "
+          className="flex flex-col items-center  gap-y-8 rounded-xl border-2
+          border-[#2448d885] p-4 shadow-2xl "
         >
-          <div className="mb-5 flex w-full  items-center justify-between ">
+          <div className="flex w-full items-center justify-between md:px-8 lg:px-16  xlg:px-0 ">
             <div className="PERRCENT relative h-[150px] w-[150px] ">
               <div
                 style={{
@@ -143,15 +143,15 @@ const MySkills = () => {
                 90%
               </div>
             </div>
-            <div className="flex w-full items-center justify-center gap-1.5">
-              <span className="text-xl">CSS</span>
+            <div className="flex items-center gap-1.5 xlg:w-full xlg:justify-center">
+              <span className="text-[22px]">CSS</span>
               <span className="w-6 pt-0.5 text-2xl text-[#2449d8]">
                 <IoLogoCss3 />
               </span>
             </div>
           </div>
 
-          <p className="px-2 text-justify">
+          <p className="hidden px-2 text-justify xlg:block">
             <span className="font-opensans font-semibold text-[#2449d8]">
               Css
             </span>{" "}
@@ -164,10 +164,10 @@ const MySkills = () => {
         </div>
         {/* JAVA SCRIPT */}
         <div
-          className="flex flex-col items-center  
-           gap-y-3 rounded-xl shadow-2xl "
+          className="flex flex-col items-center gap-y-8 rounded-xl border-2 
+           border-[#ead51c80] p-4 shadow-2xl "
         >
-          <div className="mb-5 flex w-full  items-center justify-between ">
+          <div className="flex w-full items-center justify-between md:px-8 lg:px-16  xlg:px-0 ">
             <div className="PERRCENT relative h-[150px] w-[150px] ">
               <div
                 style={{
@@ -199,17 +199,16 @@ const MySkills = () => {
                 85%
               </div>
             </div>
-            <div className="flex w-full items-center justify-center gap-1.5">
-              <span className="text-xl">JAVA SCRIPT</span>
+            <div className="flex items-center gap-1.5 xlg:w-full xlg:justify-center">
+              <span className="text-[22px]">JAVA SCRIPT</span>
               <span className="w-6 pt-0.5 text-2xl text-[#ead41c]">
                 <SiJavascript />
               </span>
             </div>
           </div>
 
-          <p className="px-2 text-justify">
-            main programming language which front-end developers needs to know
-            .I used to develop my project with pure{" "}
+          <p className="hidden px-2 text-justify xlg:block">
+            I used to develop my project with pure{" "}
             <span className="font-opensans font-semibold text-[#ead41c]">
               JS
             </span>{" "}
@@ -218,10 +217,10 @@ const MySkills = () => {
         </div>
         {/* REACT */}
         <div
-          className="flex flex-col items-center  
-           gap-y-3 rounded-xl shadow-2xl "
+          className="flex flex-col items-center  gap-y-8 rounded-xl border-2
+           border-[#5dcfef8d] p-4 shadow-2xl "
         >
-          <div className="mb-5 flex w-full  items-center justify-between ">
+          <div className="flex w-full items-center justify-between md:px-8 lg:px-16  xlg:px-0 ">
             <div className="PERRCENT relative h-[150px] w-[150px] ">
               <div
                 style={{
@@ -253,34 +252,30 @@ const MySkills = () => {
                 75%
               </div>
             </div>
-            <div className="flex w-full items-center justify-center gap-1.5">
-              <span className="text-xl">REACT</span>
+            <div className="flex items-center gap-1.5 xlg:w-full xlg:justify-center">
+              <span className="text-[22px]">REACT</span>
               <span className="w-6 pt-0.5 text-2xl text-[#5dcfef]">
                 <FaReact />
               </span>
             </div>
           </div>
 
-          <p className="px-2 text-justify">
-            I have been using{" "}
+          <p className="hidden px-2 text-justify xlg:block">
+            All of my projects are developed with
             <span className="font-opensans font-semibold text-[#5dcfef]">
-              React
+              {" "}
+              React{" "}
             </span>{" "}
-            for more than 1 year .All of my projects are developed with{" "}
-            <span className="font-opensans font-semibold text-[#5dcfef]">
-              React
-            </span>{" "}
-            and i use libraries like
-            framer-motion,formik,react-icons,toastify,loadash to make projects
-            better.
+            and i use libraries like framer-motion,
+            formik,react-icons,toastify,loadash to make projects better.
           </p>
         </div>
         {/* REDUX */}
         <div
-          className="flex flex-col items-center  
-          gap-y-3 rounded-xl shadow-2xl "
+          className="flex flex-col items-center  gap-y-8 rounded-xl border-2
+          border-[#7145b284] p-4 shadow-2xl "
         >
-          <div className="mb-5 flex w-full  items-center justify-between ">
+          <div className="flex w-full items-center justify-between md:px-8 lg:px-16  xlg:px-0 ">
             <div className="PERRCENT relative h-[150px] w-[150px] ">
               <div
                 style={{
@@ -312,15 +307,15 @@ const MySkills = () => {
                 60%
               </div>
             </div>
-            <div className="flex w-full items-center justify-center gap-1.5">
-              <span className="text-xl">REDUX</span>
+            <div className="flex items-center gap-1.5 xlg:w-full xlg:justify-center">
+              <span className="text-[22px]">REDUX</span>
               <span className="w-6 pt-0.5 text-2xl text-[#7045b2]">
                 <SiRedux />
               </span>
             </div>
           </div>
 
-          <p className="px-2 text-justify">
+          <p className="hidden px-2 text-justify xlg:block">
             I choose{" "}
             <span className="font-opensans font-semibold text-[#7045b2]">
               Redux
@@ -331,10 +326,10 @@ const MySkills = () => {
         </div>
         {/* GIT */}
         <div
-          className="flex flex-col items-center  
-           gap-y-3 rounded-xl shadow-2xl "
+          className="flex flex-col items-center  gap-y-8 rounded-xl border-2
+           border-[#e44c3084] p-4 shadow-2xl "
         >
-          <div className="mb-5 flex w-full  items-center justify-between ">
+          <div className="flex w-full items-center justify-between md:px-8 lg:px-16  xlg:px-0 ">
             <div className="PERRCENT relative h-[150px] w-[150px] ">
               <div
                 style={{
@@ -366,15 +361,15 @@ const MySkills = () => {
                 70%
               </div>
             </div>
-            <div className="flex w-full items-center justify-center gap-1.5">
-              <span className="text-xl">GIT</span>
+            <div className="flex items-center gap-1.5 xlg:w-full xlg:justify-center">
+              <span className="text-[22px]">GIT</span>
               <span className="w-6 pt-0.5 text-2xl text-[#e44c30]">
                 <BsGit />
               </span>
             </div>
           </div>
 
-          <p className="px-2 text-justify">
+          <p className="hidden px-2 text-justify xlg:block">
             I use{" "}
             <span className="font-opensans font-semibold text-[#e44c30]">
               Git
@@ -384,10 +379,10 @@ const MySkills = () => {
         </div>
         {/* MATERIAL UI  */}
         <div
-          className="flex flex-col items-center  
-          gap-y-3 rounded-xl shadow-2xl "
+          className="flex flex-col items-center  gap-y-8 rounded-xl border-2
+          border-[#0079f284] p-4 shadow-2xl "
         >
-          <div className="mb-5 flex w-full  items-center justify-between ">
+          <div className="flex w-full items-center justify-between md:px-8 lg:px-16  xlg:px-0 ">
             <div className="PERRCENT relative h-[150px] w-[150px] ">
               <div
                 style={{
@@ -419,8 +414,8 @@ const MySkills = () => {
                 65%
               </div>
             </div>
-            <div className="flex w-full items-center justify-center gap-1">
-              <span className="text-xl">MATERIAL UI</span>
+            <div className="flex items-center gap-1 xlg:w-full xlg:justify-center">
+              <span className="text-[22px]">MATERIAL UI</span>
               <span className="w-8 pt-0.5 text-2xl text-[#0079f2]">
                 <img
                   src={require("../assets/tailwindLogo.png")}
@@ -430,7 +425,7 @@ const MySkills = () => {
             </div>
           </div>
 
-          <p className="px-3 text-justify">
+          <p className="hidden px-2 text-justify xlg:block">
             <span className="font-opensans font-semibold text-[#0079f2]">
               MUI
             </span>{" "}
@@ -444,10 +439,10 @@ const MySkills = () => {
         </div>
         {/* TAILWIND CSS */}
         <div
-          className="flex flex-col items-center  
-           gap-y-3 rounded-xl shadow-2xl "
+          className="flex flex-col items-center  gap-y-8 rounded-xl border-2
+           border-[#13b5b084] p-4 shadow-2xl "
         >
-          <div className="mb-5 flex w-full  items-center justify-between ">
+          <div className="flex w-full items-center justify-between md:px-8 lg:px-16  xlg:px-0 ">
             <div className="PERRCENT relative h-[150px] w-[150px] ">
               <div
                 style={{
@@ -479,15 +474,15 @@ const MySkills = () => {
                 75%
               </div>
             </div>
-            <div className="flex w-full items-center justify-center gap-1.5">
-              <span className="text-xl">TAILWIND</span>
+            <div className="flex items-center gap-1.5 xlg:w-full xlg:justify-center">
+              <span className="text-[22px]">TAILWIND</span>
               <span className="w-6 pt-0.5 text-2xl text-[#13b5b0]">
                 <SiTailwindcss />
               </span>
             </div>
           </div>
 
-          <p className="text-justify">
+          <p className="hidden px-2 text-justify xlg:block">
             <span className="font-opensans font-semibold text-[#13b5b0] ">
               Tailwind
             </span>{" "}
@@ -499,7 +494,6 @@ const MySkills = () => {
             </span>
           </p>
         </div>
-
         {/*  */}
       </motion.div>
     </section>

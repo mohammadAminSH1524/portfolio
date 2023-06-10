@@ -42,7 +42,7 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea.
+          Aliquam aliquet integer ut fames odio in at. At magna ornare dictum lectus.
           </p>
         </motion.div>
 
@@ -79,7 +79,7 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Fames odio in at. At magna ornare dictum lectus.
+          Aliquam aliquet integer ut fames odio in at. At magna ornare dictum lectus.
           </p>
         </motion.div>
       </div>

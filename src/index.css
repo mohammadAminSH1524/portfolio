@@ -16,6 +16,10 @@ body,
   
 }
 
+div{
+  /* outline: 1px solid rgb(175, 131, 131); */
+}
+
 .second-circle {
   stroke: var(--strokeColor);
   stroke-dasharray: 440;

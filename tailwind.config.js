@@ -21,8 +21,7 @@ module.exports = {
         "gradient-rainblue":
           "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
 
-        "gradient-profile":
-          "linear-gradient(90deg, #9fa3f9 0%, #8d9cfc 100%)",
+        "gradient-profile": "linear-gradient(90deg, #9fa3f9 0%, #8d9cfc 100%)",
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
@@ -39,9 +38,12 @@ module.exports = {
       xs: "480px",
       ss: "620px",
       sm: "768px",
+      m: "900px",
       md: "1060px",
       lg: "1200px",
+      xlg: "1400px",
       xl: "1700px",
+      xxl: "1818px",
     },
   },
   plugins: [],

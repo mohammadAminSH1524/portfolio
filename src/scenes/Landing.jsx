@@ -10,7 +10,7 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="gap-16 py-10 md:flex md:h-full md:items-center md:justify-between"
+      className="gap-16 py-10 pb-12 md:flex md:h-full md:items-center md:justify-between"
     >
       {/* IMAGE SECTION */}
       <div className="z-10 mt-16 flex basis-3/5 justify-center md:order-2 md:mt-32">
@@ -154,6 +154,7 @@ const Landing = ({ setSelectedPage }) => {
               <BsInstagram />
             </a>
           </div>
+          
         </motion.div>
       </div>
     </section>

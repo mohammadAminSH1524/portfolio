@@ -1,5 +1,5 @@
 import { BsGithub, BsInstagram, BsLinkedin, BsTelegram } from "react-icons/bs";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+
 
 const Footer = () => {
   return (

@@ -1,4 +1,3 @@
-
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -22,22 +21,16 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="z-10 w-full max-w-[400px] transition duration-500 hover:saturate-200
-                hover:filter   rounded-t-[400px] md:max-w-[600px]"
-              src={require("../assets/profile-image.png")}
+              className="z-10 w-full max-w-[400px] rounded-t-[400px] bg-[#fd7fa4] 
+                transition    duration-500 hover:filter md:max-w-[600px]"
+              src={require("../assets/IMG_6361_prev_ui.png")}
             />
-            {/* <img
-              alt="profile"
-              className="z-10 w-full max-w-[400px] transition duration-500 hover:saturate-100
-                hover:filter bg-blue  rounded-t-[400px] md:max-w-[550px]"
-              src={require("../assets/profile.png")}
-            /> */}
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src={require("../assets/profile-image.png")}
+            className="z-10 w-full max-w-[400px] rounded-t-[400px] bg-[#fd7fa4] md:max-w-[600px]"
+            src={require("../assets/IMG_6361_prev_ui.png")}
           />
         )}
       </div>
@@ -154,7 +147,6 @@ const Landing = ({ setSelectedPage }) => {
               <BsInstagram />
             </a>
           </div>
-          
         </motion.div>
       </div>
     </section>
